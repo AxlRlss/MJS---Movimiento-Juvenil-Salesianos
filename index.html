@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="referrer" content="strict-origin-when-cross-origin"> <meta http-equiv="X-Content-Type-Options" content="nosniff"> <meta http-equiv="X-Frame-Options" content="DENY">
+<title>MJS — Alta Gracia</title>
+ <link rel="icon" href="Pfp.jpg" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="index, follow">
+</head>
+<body oncontextmenu = "return false">
+
+<main class="container">
+
+  <div class="profile">
+    <div class="avatar"></div>
+    <h1>𝑀𝒥𝒮 </h1>
+    <p>Alta Gracia — Córdoba</p>
+    <p class="location">𝒮𝑜𝓂𝑜𝓈 𝐹𝒶𝓂𝒾𝓁𝒾𝒶</p>
+  </div>
+
+  <div class="links">
+    <a href="https://www.instagram.com/mjs.altagracia/" class="link" rel="noopener noreferrer" >Instagram</a>
+    <a href="https://whatsapp.com/channel/0029VbBMe18Dp2QGuBJyCZ0A" class="link" rel="noopener noreferrer" >Canal de Wspp</a>
+    <a href="https://www.sdb.org/es/Rector_Mayor/Aguinaldo/Aguinaldo_2026" class="link" rel="noopener noreferrer" >Aginaldo 2026</a>
+    <a href="familia.html" class="link highlight" rel="noopener noreferrer" >¿Quienes Somos?</a>
+  </div>
+
+</main>
+
+<footer>
+   Movimiento Juvenil Salesianos — Alta Gracia. <br> ©AxlRlss
+</footer>
+
+</body>
+<script>
+
+function spawnSticker() {
+   const stickers = ["⭐", "💖", "🎵", "✨", "🫧", "💕","🫠","👻","⚜️","🦄","🐈‍⬛","🦐","🧠","🫵🏻","🫰🏻","🫶🏻","🎈","🎀","🎶","🎸","🧏🏻‍♀️","🏃🏻‍♀️‍➡️","🎧","🎤","🎺","⚖️","🕯️","📖","🍰","🍦","🍧","☕","🍃","🌕","☀️","❄️","🧡","🖤","🤍","💜","🔙","💭","🧸"];
+
+  const sticker = document.createElement("div");
+  sticker.className = "sticker";
+  sticker.textContent = stickers[Math.floor(Math.random() * stickers.length)];
+
+  sticker.style.left = Math.random() * 100 + "vw";
+  sticker.style.animationDuration = 8 + Math.random() * 6 + "s";
+
+  document.body.appendChild(sticker);
+
+  setTimeout(() => {
+    sticker.remove();
+  }, 14000);
+}
+setInterval(spawnSticker, 2000);
+
+</script>
+</html>
